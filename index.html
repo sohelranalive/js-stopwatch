@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+
+    <style>
+        .div1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .div2 {
+            text-align: center;
+        }
+
+        .time {
+            font-size: 100px;
+        }
+
+        .div2>button {
+            font-size: large;
+            background-color: aquamarine;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0px 10px 0px;
+            cursor: pointer;
+        }
+
+        .disable {
+            opacity: 0.6;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="div1">
+        <h1 class="time" id="set-time">0</h1>
+    </div>
+    <div class="div2">
+        <button onclick="startTime()" id="start-button">Start</button>
+        <button onclick="stopTime()" class="disable" id="stop-button">Stop</button>
+        <button onclick="resetTime()" class="disable" id="reset-button">Reset</button>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
